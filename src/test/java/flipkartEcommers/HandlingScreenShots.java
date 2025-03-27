@@ -17,6 +17,8 @@ public class HandlingScreenShots {
 	
 	WebDriver driver;
 	
+	TakesScreenshot ts;
+	
 	@BeforeClass
 	public void setUp() {
 		driver = new ChromeDriver();
@@ -24,11 +26,12 @@ public class HandlingScreenShots {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.flipkart.com/");
 		driver.manage().window().maximize();
+		// Initiate ScreeShot interface
+		ts = (TakesScreenshot)driver;
 	}
 	
 	@Test(priority = 1)
 	public void captureFullPage() {
-		TakesScreenshot ts = (TakesScreenshot)driver;
 		File full_page = ts.getScreenshotAs(OutputType.FILE);
 		File folder = new File(System.getProperty("user.dir")+"\\CapturedScreeShots\\E-comFullPage.png");
 		full_page.renameTo(folder);
@@ -36,7 +39,6 @@ public class HandlingScreenShots {
 	
 	@Test(priority = 2)
 	public void captureSpecificPlace() {
-		TakesScreenshot ts = (TakesScreenshot)driver;
 		WebElement spe_place = driver.findElement(By.xpath("//body/div[@id='container']/div/div[@class='q8WwEU']/div[@class='_3zsGrb']/div[@class='_2-LWwB']/div/div[@class='css-175oi2r']/div[@class='css-175oi2r']/div[@class='css-175oi2r r-13awgt0 r-1iqfa7g r-60vfwk']/div[@class='css-175oi2r r-13awgt0 r-1iqfa7g r-60vfwk']/div[@class='_1ui5b4']/div[@class='yAlKeh']/div[@class='_2L0uxW']/div[@class='_3116_u']/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"));
 		File source_file = spe_place.getScreenshotAs(OutputType.FILE);
 		File target_file = new File(System.getProperty("user.dir")+"\\CapturedScreeShots\\E-comSpePage.png");
@@ -45,7 +47,6 @@ public class HandlingScreenShots {
 	
 	@Test(priority = 3)
 	public void captureWebElement() {
-		TakesScreenshot ts = (TakesScreenshot)driver;
 		WebElement logo = driver.findElement(By.xpath("//img[@title='Flipkart']"));
 		File source_file = logo.getScreenshotAs(OutputType.FILE);
 		File target_file = new File(System.getProperty("user.dir")+"\\CapturedScreeShots\\E-comLogo.png");

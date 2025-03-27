@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-26T20:01:04 IST" name="Default suite" finished-at="2025-03-26T20:01:14 IST" duration-ms="9868">
+  <suite started-at="2025-03-27T21:45:35 IST" name="Default suite" finished-at="2025-03-27T21:45:55 IST" duration-ms="19794">
     <groups>
     </groups>
-    <test started-at="2025-03-26T20:01:04 IST" name="Default test" finished-at="2025-03-26T20:01:14 IST" duration-ms="9868">
+    <test started-at="2025-03-27T21:45:35 IST" name="Default test" finished-at="2025-03-27T21:45:55 IST" duration-ms="19794">
       <class name="flipkartEcommers.HandlingScreenShots">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:flipkartEcommers.HandlingScreenShots@4afcd809]" started-at="2025-03-26T20:01:04 IST" name="setUp" finished-at="2025-03-26T20:01:13 IST" duration-ms="8952" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:flipkartEcommers.HandlingScreenShots@4afcd809]" started-at="2025-03-27T21:45:35 IST" name="setUp" finished-at="2025-03-27T21:45:53 IST" duration-ms="17778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="captureFullPage()[pri:1, instance:flipkartEcommers.HandlingScreenShots@4afcd809]" started-at="2025-03-26T20:01:13 IST" name="captureFullPage" finished-at="2025-03-26T20:01:14 IST" duration-ms="374" status="PASS">
+        <test-method signature="captureFullPage()[pri:1, instance:flipkartEcommers.HandlingScreenShots@4afcd809]" started-at="2025-03-27T21:45:53 IST" name="captureFullPage" finished-at="2025-03-27T21:45:54 IST" duration-ms="937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFullPage -->
-        <test-method signature="captureSpecificPlace()[pri:2, instance:flipkartEcommers.HandlingScreenShots@4afcd809]" started-at="2025-03-26T20:01:14 IST" name="captureSpecificPlace" finished-at="2025-03-26T20:01:14 IST" duration-ms="199" status="PASS">
+        <test-method signature="captureSpecificPlace()[pri:2, instance:flipkartEcommers.HandlingScreenShots@4afcd809]" started-at="2025-03-27T21:45:54 IST" name="captureSpecificPlace" finished-at="2025-03-27T21:45:54 IST" duration-ms="404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureSpecificPlace -->
-        <test-method signature="captureWebElement()[pri:3, instance:flipkartEcommers.HandlingScreenShots@4afcd809]" started-at="2025-03-26T20:01:14 IST" name="captureWebElement" finished-at="2025-03-26T20:01:14 IST" duration-ms="77" status="PASS">
+        <test-method signature="captureWebElement()[pri:3, instance:flipkartEcommers.HandlingScreenShots@4afcd809]" started-at="2025-03-27T21:45:54 IST" name="captureWebElement" finished-at="2025-03-27T21:45:55 IST" duration-ms="165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureWebElement -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:flipkartEcommers.HandlingScreenShots@4afcd809]" started-at="2025-03-26T20:01:14 IST" name="tearDown" finished-at="2025-03-26T20:01:14 IST" duration-ms="228" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:flipkartEcommers.HandlingScreenShots@4afcd809]" started-at="2025-03-27T21:45:55 IST" name="tearDown" finished-at="2025-03-27T21:45:55 IST" duration-ms="413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
