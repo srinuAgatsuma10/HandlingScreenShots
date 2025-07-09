@@ -28,18 +28,18 @@ public class HandlingScreenShots {
 		ts = (TakesScreenshot)driver;
 	}
 	
-//	@Test(priority = 1)	
+	@Test(priority = 1)	
 	public void captureFullPage() {
 		File wiki_page = ts.getScreenshotAs(OutputType.FILE);
 		File storeFolder = new File(System.getProperty("user.dir")+"\\CapturedScreeShots\\WikiPage.png");
 		wiki_page.renameTo(storeFolder);
 	}
 	
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void captureElement() {
 		WebElement onePiece_Poster = driver.findElement(By.xpath("//span[@class='mw-default-size']//img[@class='mw-file-element']"));
 		File poster = onePiece_Poster.getScreenshotAs(OutputType.FILE);
-		File storeFolder = new File(System.getProperty("user.dir")+"\\CaptureScreenShots\\OnePiecePoster.png");
+		File storeFolder = new File(System.getProperty("user.dir")+"\\CapturedScreeShots\\OnePiecePoster.png");
 		poster.renameTo(storeFolder);
 	}
 	
@@ -48,7 +48,7 @@ public class HandlingScreenShots {
 		//table[@class='infobox']
 		WebElement infoPlace = driver.findElement(By.xpath("//span[@class='mw-default-size']//img[@class='mw-file-element']"));
 		File info = infoPlace.getScreenshotAs(OutputType.FILE);
-		File storeFolder = new File(System.getProperty("user.dir")+"\\CaptureScreenShots\\onePice_Info.png");
+		File storeFolder = new File(System.getProperty("user.dir")+"\\CapturedScreeShots\\onePice_Info.png");
 		info.renameTo(storeFolder);
 	}
 	

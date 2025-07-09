@@ -6,7 +6,7 @@
       <class name="flipkartEcommers.HandlingScreenShots">
         <methods>
           <include name="tearDown"/>
-          <include name="captureFullPage"/>
+          <include name="captureSpecificPlace"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- flipkartEcommers.HandlingScreenShots -->
