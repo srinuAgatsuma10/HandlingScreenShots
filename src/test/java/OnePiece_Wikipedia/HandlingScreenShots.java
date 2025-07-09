@@ -3,9 +3,11 @@ package OnePiece_Wikipedia;
 import java.io.File;
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -26,20 +28,23 @@ public class HandlingScreenShots {
 		ts = (TakesScreenshot)driver;
 	}
 	
-	@Test(priority = 1)	
+//	@Test(priority = 1)	
 	public void captureFullPage() {
 		File wiki_page = ts.getScreenshotAs(OutputType.FILE);
 		File storeFolder = new File(System.getProperty("user.dir")+"\\CapturedScreeShots\\WikiPage.png");
 		wiki_page.renameTo(storeFolder);
 	}
 	
-//	@Test(priority = 2)
-	public void captureSpecificPlace() {
-		
+	@Test(priority = 2)
+	public void captureElement() {
+		WebElement onePiece_Poster = driver.findElement(By.xpath("//span[@class='mw-default-size']//img[@class='mw-file-element']"));
+		File poster = onePiece_Poster.getScreenshotAs(OutputType.FILE);
+		File storeFolder = new File(System.getProperty("user.dir")+"\\CaptureScreenShots\\OnePiecePoster.png");
+		poster.renameTo(storeFolder);
 	}
 	
 //	@Test(priority = 3)
-	public void captureElement() {
+	public void captureSpecificPlace() {
 		
 	}
 	
