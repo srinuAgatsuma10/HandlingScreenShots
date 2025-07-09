@@ -35,7 +35,7 @@ public class HandlingScreenShots {
 		wiki_page.renameTo(storeFolder);
 	}
 	
-	@Test(priority = 2)
+//	@Test(priority = 2)
 	public void captureElement() {
 		WebElement onePiece_Poster = driver.findElement(By.xpath("//span[@class='mw-default-size']//img[@class='mw-file-element']"));
 		File poster = onePiece_Poster.getScreenshotAs(OutputType.FILE);
@@ -43,9 +43,13 @@ public class HandlingScreenShots {
 		poster.renameTo(storeFolder);
 	}
 	
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	public void captureSpecificPlace() {
-		
+		//table[@class='infobox']
+		WebElement infoPlace = driver.findElement(By.xpath("//span[@class='mw-default-size']//img[@class='mw-file-element']"));
+		File info = infoPlace.getScreenshotAs(OutputType.FILE);
+		File storeFolder = new File(System.getProperty("user.dir")+"\\CaptureScreenShots\\onePice_Info.png");
+		info.renameTo(storeFolder);
 	}
 	
 	@AfterClass
